@@ -1,1 +1,186 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      padding: 40px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: #222;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 100px 5vw 120px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 9vw, 110px);
+      line-height: 1;
+      margin: 0 0 30px;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 650px;
+    }
+
+    .works {
+      padding: 40px 5vw 120px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .works h2 {
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+
+    .category {
+      margin-bottom: 70px;
+    }
+
+    .category h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .category p {
+      line-height: 1.8;
+      color: #555;
+    }
+
+    footer {
+      padding: 50px 5vw;
+      border-top: 1px solid #ddd;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 25px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 25px 90px;
+      }
+
+      .works {
+        padding: 30px 25px 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Portfolio</div>
+
+    <nav>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Visual<br>Works.</h1>
+
+      <p>
+        広報、グラフィックデザイン、動画制作、
+        写真撮影を中心としたポートフォリオです。
+      </p>
+    </section>
+
+    <section class="works" id="works">
+      <h2>Works</h2>
+
+      <div class="category">
+        <h3>Graphic Design</h3>
+        <p>
+          広報物やグラフィックデザインの制作実績を紹介します。
+        </p>
+      </div>
+
+      <div class="category">
+        <h3>Movie</h3>
+        <p>
+          動画制作・編集などの実績を紹介します。
+        </p>
+      </div>
+
+      <div class="category">
+        <h3>Photography</h3>
+        <p>
+          カメラで撮影した写真作品や撮影実績を紹介します。
+        </p>
+      </div>
+
+    </section>
+
+    <section class="works" id="about">
+      <h2>About</h2>
+
+      <p>
+        広報を中心に、グラフィック、動画、写真など、
+        視覚的なコミュニケーションを制作しています。
+      </p>
+    </section>
+
+    <section class="works" id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        お問い合わせはこちらから。
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Portfolio
+  </footer>
+
+</body>
+</html>
