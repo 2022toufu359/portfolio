@@ -1,2 +1,2 @@
-# Doi＿portfolio
+# Doi_portfolio
 これは圡井の作品をまとめたポートフォリオサイトです。
