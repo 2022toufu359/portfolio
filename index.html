@@ -11,55 +11,6 @@
 
   <title>Portfolio</title>
 
-/* About - Tools */
-.tools {
-  margin-top: 48px;
-  max-width: 420px;
-}
-
-.tools h3 {
-  font-size: 14px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.tool-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-  font-size: 13px;
-}
-
-.tool-icon {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-.illustrator { background: #e86b2e; }
-.photoshop { background: #1769aa; }
-.indesign { background: #b52b58; }
-.premiere { background: #6545a5; }
-
-.tool-name {
-  flex: 1;
-}
-
-.tool-stars {
-  letter-spacing: 2px;
-  white-space: nowrap;
-  font-size: 13px;
-}
-
   <style>
     * {
       box-sizing: border-box;
@@ -319,6 +270,56 @@
         right: 12px;
       }
     }
+
+    /* About - Tools */
+    .tools {
+      margin-top: 48px;
+      max-width: 420px;
+    }
+
+    .tools h3 {
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .tool-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 13px;
+    }
+
+    .tool-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .illustrator { background: #e86b2e; }
+    .photoshop { background: #1769aa; }
+    .indesign { background: #b52b58; }
+    .premiere { background: #6545a5; }
+
+    .tool-name {
+      flex: 1;
+    }
+
+    .tool-stars {
+      letter-spacing: 2px;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+
   </style>
 </head>
 
@@ -401,10 +402,34 @@
     <section class="works" id="about">
       <h2>About</h2>
       <p class="about-text">好奇心</p>
-    </section>
-    <section class="works" id="about">
-      <h2>About</h2>
-      <p class="about-text">好奇心</p>
+
+      <div class="tools">
+        <h3>Tools</h3>
+
+        <div class="tool-item">
+          <span class="tool-icon illustrator">Ai</span>
+          <span class="tool-name">Illustrator</span>
+          <span class="tool-stars">★★★★★</span>
+        </div>
+
+        <div class="tool-item">
+          <span class="tool-icon photoshop">Ps</span>
+          <span class="tool-name">Photoshop</span>
+          <span class="tool-stars">★★★★☆</span>
+        </div>
+
+        <div class="tool-item">
+          <span class="tool-icon indesign">Id</span>
+          <span class="tool-name">InDesign</span>
+          <span class="tool-stars">★★★☆☆</span>
+        </div>
+
+        <div class="tool-item">
+          <span class="tool-icon premiere">Pr</span>
+          <span class="tool-name">Premiere Pro</span>
+          <span class="tool-stars">★★★★☆</span>
+        </div>
+      </div>
     </section>
 
     <section class="works" id="contact">
