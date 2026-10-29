@@ -163,6 +163,20 @@
       margin: 0;
     }
 
+    .work-category {
+      margin-top: 64px;
+    }
+
+    .work-category:first-of-type {
+      margin-top: 0;
+    }
+
+    .category-title {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0 0 24px;
+    }
+
     /* About / Contact */
     .about-text,
     .contact-text {
@@ -352,60 +366,112 @@
     <section class="works" id="works">
       <h2>Works</h2>
 
-      <div class="works-grid">
+      <!-- Graphic Design — PR -->
+      <section class="work-category" aria-labelledby="pr-heading">
+        <h3 class="category-title" id="pr-heading">Graphic Design — PR</h3>
+        <div class="works-grid">
+          <button class="work-card" data-kind="image" data-src="images/graphic-01.jpg" data-title="Graphic Design — PR 01">
+            <div class="thumbnail">
+              <img src="images/graphic-01.jpg" alt="PRグラフィック作品 01">
+              <span class="thumbnail-placeholder">PR 01</span>
+            </div>
+            <p class="work-title">PR 01</p>
+          </button>
+          <button class="work-card" data-kind="image" data-src="images/graphic-02.jpg" data-title="Graphic Design — PR 02">
+            <div class="thumbnail">
+              <img src="images/graphic-02.jpg" alt="PRグラフィック作品 02">
+              <span class="thumbnail-placeholder">PR 02</span>
+            </div>
+            <p class="work-title">PR 02</p>
+          </button>
+        </div>
+      </section>
 
-        <!-- 画像作品：srcを自分の画像ファイルに変更 -->
-        <button class="work-card"
-          data-kind="image"
-          data-src="images/graphic-01.jpg"
-          data-title="Graphic Design">
-          <div class="thumbnail">
-            <img src="images/graphic-01.jpg" alt="グラフィック作品">
-            <span class="thumbnail-placeholder">Image 01</span>
-          </div>
-          <p class="work-title">Graphic Design 01</p>
-          <p class="work-type">Graphic Design</p>
-        </button>
+      <!-- Graphic Design — Editorial -->
+      <section class="work-category" aria-labelledby="editorial-heading">
+        <h3 class="category-title" id="editorial-heading">Graphic Design — Editorial</h3>
+        <div class="works-grid">
+          <button class="work-card" data-kind="image" data-src="images/editorial-01.jpg" data-title="Graphic Design — Editorial 01">
+            <div class="thumbnail">
+              <img src="images/editorial-01.jpg" alt="エディトリアル作品 01">
+              <span class="thumbnail-placeholder">Editorial 01</span>
+            </div>
+            <p class="work-title">Editorial 01</p>
+          </button>
+          <button class="work-card" data-kind="image" data-src="images/editorial-02.jpg" data-title="Graphic Design — Editorial 02">
+            <div class="thumbnail">
+              <img src="images/editorial-02.jpg" alt="エディトリアル作品 02">
+              <span class="thumbnail-placeholder">Editorial 02</span>
+            </div>
+            <p class="work-title">Editorial 02</p>
+          </button>
+        </div>
+      </section>
 
-        <button class="work-card"
-          data-kind="image"
-          data-src="images/photo-01.jpg"
-          data-title="Photography">
-          <div class="thumbnail">
-            <img src="images/photo-01.jpg" alt="写真作品">
-            <span class="thumbnail-placeholder">Image 02</span>
-          </div>
-          <p class="work-title">Photography 01</p>
-          <p class="work-type">Photography</p>
-        </button>
+      <!-- Graphic Design — Personal -->
+      <section class="work-category" aria-labelledby="personal-heading">
+        <h3 class="category-title" id="personal-heading">Graphic Design — Personal</h3>
+        <div class="works-grid">
+          <button class="work-card" data-kind="image" data-src="images/personal-01.jpg" data-title="Graphic Design — Personal 01">
+            <div class="thumbnail">
+              <img src="images/personal-01.jpg" alt="自主制作グラフィック作品 01">
+              <span class="thumbnail-placeholder">Personal 01</span>
+            </div>
+            <p class="work-title">Personal 01</p>
+          </button>
+          <button class="work-card" data-kind="image" data-src="images/personal-02.jpg" data-title="Graphic Design — Personal 02">
+            <div class="thumbnail">
+              <img src="images/personal-02.jpg" alt="自主制作グラフィック作品 02">
+              <span class="thumbnail-placeholder">Personal 02</span>
+            </div>
+            <p class="work-title">Personal 02</p>
+          </button>
+        </div>
+      </section>
 
-        <!-- 動画作品：YouTubeの動画IDを設定 -->
-        <button class="work-card"
-          data-kind="video"
-          data-video="YOUR_VIDEO_ID"
-          data-title="Brand Movie">
-          <div class="thumbnail">
-            <img src="images/movie-01.jpg" alt="動画作品">
-            <span class="thumbnail-placeholder">Movie 01</span>
-            <span class="play-icon" aria-hidden="true">▶</span>
-          </div>
-          <p class="work-title">Brand Movie 01</p>
-          <p class="work-type">Movie</p>
-        </button>
+      <!-- Video -->
+      <section class="work-category" aria-labelledby="video-heading">
+        <h3 class="category-title" id="video-heading">Video</h3>
+        <div class="works-grid">
+          <button class="work-card" data-kind="video" data-video="YOUR_VIDEO_ID" data-title="Video 01">
+            <div class="thumbnail">
+              <img src="images/movie-01.jpg" alt="動画作品 01">
+              <span class="thumbnail-placeholder">Video 01</span>
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </div>
+            <p class="work-title">Video 01</p>
+          </button>
+          <button class="work-card" data-kind="video" data-video="YOUR_VIDEO_ID_2" data-title="Video 02">
+            <div class="thumbnail">
+              <img src="images/movie-02.jpg" alt="動画作品 02">
+              <span class="thumbnail-placeholder">Video 02</span>
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </div>
+            <p class="work-title">Video 02</p>
+          </button>
+        </div>
+      </section>
 
-        <button class="work-card"
-          data-kind="image"
-          data-src="images/graphic-02.jpg"
-          data-title="Graphic Design">
-          <div class="thumbnail">
-            <img src="images/graphic-02.jpg" alt="グラフィック作品">
-            <span class="thumbnail-placeholder">Image 03</span>
-          </div>
-          <p class="work-title">Graphic Design 02</p>
-          <p class="work-type">Graphic Design</p>
-        </button>
-
-      </div>
+      <!-- Photo -->
+      <section class="work-category" aria-labelledby="photo-heading">
+        <h3 class="category-title" id="photo-heading">Photo</h3>
+        <div class="works-grid">
+          <button class="work-card" data-kind="image" data-src="images/photo-01.jpg" data-title="Photo 01">
+            <div class="thumbnail">
+              <img src="images/photo-01.jpg" alt="写真作品 01">
+              <span class="thumbnail-placeholder">Photo 01</span>
+            </div>
+            <p class="work-title">Photo 01</p>
+          </button>
+          <button class="work-card" data-kind="image" data-src="images/photo-02.jpg" data-title="Photo 02">
+            <div class="thumbnail">
+              <img src="images/photo-02.jpg" alt="写真作品 02">
+              <span class="thumbnail-placeholder">Photo 02</span>
+            </div>
+            <p class="work-title">Photo 02</p>
+          </button>
+        </div>
+      </section>
     </section>
     
     <section class="works" id="about">
@@ -504,7 +570,7 @@
       if (kind === "video") {
         const videoId = card.dataset.video;
 
-        if (!videoId || videoId === "YOUR_VIDEO_ID") {
+        if (!videoId || videoId.startsWith("YOUR_VIDEO_ID")) {
           modalCaption.textContent =
             "YouTubeの動画IDを設定すると、ここで再生できます。";
         } else {
