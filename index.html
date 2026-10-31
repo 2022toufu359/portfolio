@@ -170,19 +170,18 @@
     }
 
     .work-title {
-      font-size: 17px;
-      font-weight: 500;
-      margin: 14px 0 5px;
+      display: none;
     }
 
     .work-type {
       font-size: 12px;
       color: #777;
-      margin: 0;
+      margin: 9px 0 0;
+      line-height: 1.6;
     }
 
     .work-category {
-      margin-top: 64px;
+      margin-top: 44px;
     }
 
     .work-category:first-of-type {
@@ -193,7 +192,11 @@
       font-family: inherit;
       font-size: 32px;
       font-weight: 700;
-      margin: 0 0 40px;
+      margin: 0 0 22px;
+    }
+
+    #works {
+      padding-bottom: 42px;
     }
 
     /* About / Contact */
@@ -287,11 +290,20 @@
       }
 
       .work-title {
-        font-size: 14px;
+        display: none;
       }
 
       .work-type {
         font-size: 11px;
+        margin-top: 7px;
+      }
+
+      .category-title {
+        margin-bottom: 18px;
+      }
+
+      .work-category {
+        margin-top: 36px;
       }
 
       .modal {
@@ -320,32 +332,51 @@
       align-self: auto;
     }
 
-    .tools h3 {
+    .tools h3,
+    .about-heading {
+      font-family: inherit;
       font-size: 32px;
       font-weight: 700;
       letter-spacing: 0;
       text-transform: none;
-      margin: 0 0 40px;
+      line-height: 1.2;
+      margin: 0 0 22px;
+    }
+
+    .about-heading {
+      margin-top: 20px;
+      margin-bottom: 14px;
+    }
+
+    #about {
+      padding-bottom: 80px;
+    }
+
+    .about-text {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555;
+      margin: 0;
     }
 
     .tool-item {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 14px;
-      font-size: 17px;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 14px;
     }
 
     .tool-icon {
-      width: 36px;
-      height: 36px;
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 8px;
       color: white;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 12px;
       flex-shrink: 0;
     }
 
@@ -359,9 +390,9 @@
     }
 
     .tool-stars {
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       white-space: nowrap;
-      font-size: 15px;
+      font-size: 13px;
     }
 
   </style>
@@ -385,65 +416,59 @@
 
     <section class="works" id="works">
 
-      <!-- Graphic Design — PR -->
+      <!-- Graphic - PR -->
       <section class="work-category" aria-labelledby="pr-heading">
-        <h3 class="category-title" id="pr-heading">Graphic Design — PR</h3>
+        <h3 class="category-title" id="pr-heading">Graphic - PR</h3>
         <div class="works-grid">
-          <button class="work-card" data-kind="image" data-src="images/graphic-01.webp" data-title="Graphic Design — PR 01">
+          <button class="work-card" data-kind="image" data-src="images/graphic-01.webp" data-title="2023：内容からデザインまで作成">
             <div class="thumbnail">
               <img src="images/graphic-01.webp" alt="PRグラフィック作品 01">
-              <span class="thumbnail-placeholder">PR 01</span>
             </div>
-            <p class="work-title">PR 01</p>
+            <p class="work-type">2023：内容からデザインまで作成</p>
           </button>
-          <button class="work-card" data-kind="image" data-src="images/graphic-02.webp" data-title="Graphic Design — PR 02">
+          <button class="work-card" data-kind="image" data-src="images/graphic-02.webp" data-title="2022：写真合成からデザインまで作成">
             <div class="thumbnail">
               <img src="images/graphic-02.webp" alt="PRグラフィック作品 02">
-              <span class="thumbnail-placeholder">PR 02</span>
             </div>
-            <p class="work-title">PR 02</p>
+            <p class="work-type">2022：写真合成からデザインまで作成</p>
           </button>
         </div>
       </section>
 
-      <!-- Graphic Design — Branding &amp; Editorial -->
+      <!-- Graphic - Branding &amp; Editorial -->
       <section class="work-category" aria-labelledby="editorial-heading">
-        <h3 class="category-title" id="editorial-heading">Graphic Design — Branding &amp; Editorial</h3>
+        <h3 class="category-title" id="editorial-heading">Graphic - Branding &amp; Editorial</h3>
         <div class="works-grid">
-          <button class="work-card" data-kind="image" data-src="images/editorial-01.jpg" data-title="Graphic Design — Branding & Editorial 01">
+          <button class="work-card" data-kind="image" data-src="images/editorial-01.jpg" data-title="Graphic - Branding & Editorial 01">
             <div class="thumbnail">
               <img src="images/editorial-01.jpg" alt="Branding & Editorial 01">
-              <span class="thumbnail-placeholder">Branding &amp; Editorial 01</span>
             </div>
-            <p class="work-title">Branding &amp; Editorial 01</p>
+            <p class="work-type">2026：製品カタログの作成</p>
           </button>
-          <button class="work-card" data-kind="image" data-src="images/editorial-02.webp" data-title="Graphic Design — Branding & Editorial 02">
+          <button class="work-card" data-kind="image" data-src="images/editorial-02.webp" data-title="Graphic - Branding & Editorial 02">
             <div class="thumbnail">
               <img src="images/editorial-02.webp" alt="Branding & Editorial 02">
-              <span class="thumbnail-placeholder">Branding &amp; Editorial 02</span>
             </div>
-            <p class="work-title">Branding &amp; Editorial 02</p>
+            <p class="work-type">2019：プライベートの作成</p>
           </button>
         </div>
       </section>
 
-      <!-- Graphic Design — Personal -->
+      <!-- Graphic - Personal -->
       <section class="work-category" aria-labelledby="personal-heading">
-        <h3 class="category-title" id="personal-heading">Graphic Design — Personal</h3>
+        <h3 class="category-title" id="personal-heading">Graphic - Personal</h3>
         <div class="works-grid">
-          <button class="work-card" data-kind="image" data-src="images/personal-01.webp" data-title="Graphic Design — Personal 01">
+          <button class="work-card" data-kind="image" data-src="images/personal-01.webp" data-title="Graphic - Personal 01">
             <div class="thumbnail">
               <img src="images/personal-01.webp" alt="自主制作グラフィック作品 01">
-              <span class="thumbnail-placeholder">Personal 01</span>
             </div>
-            <p class="work-title">Personal 01</p>
+            <p class="work-type">2015：受賞</p>
           </button>
-          <button class="work-card" data-kind="image" data-src="images/personal-02.webp" data-title="Graphic Design — Personal 02">
+          <button class="work-card" data-kind="image" data-src="images/personal-02.webp" data-title="Graphic - Personal 02">
             <div class="thumbnail">
               <img src="images/personal-02.webp" alt="自主制作グラフィック作品 02">
-              <span class="thumbnail-placeholder">Personal 02</span>
             </div>
-            <p class="work-title">Personal 02</p>
+            <p class="work-type">2019：プライベートの作成</p>
           </button>
         </div>
       </section>
@@ -452,19 +477,17 @@
       <section class="work-category" aria-labelledby="photo-heading">
         <h3 class="category-title" id="photo-heading">Photo</h3>
         <div class="works-grid">
-          <button class="work-card" data-kind="image" data-src="images/photo-01.webp" data-title="Photo 01">
+          <button class="work-card" data-kind="image" data-src="images/photo-01.webp" data-title="2019：プライベートの撮影">
             <div class="thumbnail">
               <img src="images/photo-01.webp" alt="写真作品 01">
-              <span class="thumbnail-placeholder">Photo 01</span>
             </div>
-            <p class="work-title">Photo 01</p>
+            <p class="work-type">2019：プライベートの撮影</p>
           </button>
-          <button class="work-card" data-kind="image" data-src="images/photo-02.webp" data-title="Photo 02">
+          <button class="work-card" data-kind="image" data-src="images/photo-02.webp" data-title="2024：企業SNS用の撮影">
             <div class="thumbnail">
               <img src="images/photo-02.webp" alt="写真作品 02">
-              <span class="thumbnail-placeholder">Photo 02</span>
             </div>
-            <p class="work-title">Photo 02</p>
+            <p class="work-type">2024：企業SNS用の撮影</p>
           </button>
         </div>
       </section>
@@ -477,13 +500,13 @@
             <div class="video-player">
               <iframe src="https://www.youtube-nocookie.com/embed/XrIWrY72joI?controls=0&rel=0&modestbranding=1" title="Video 01" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
-            <p class="work-title">Video 01</p>
+            <p class="work-type">2025：所属企業での動画作成</p>
           </div>
           <div class="video-card">
             <div class="video-player">
               <iframe src="https://www.youtube-nocookie.com/embed/loR1d0q-FjI?controls=0&rel=0&modestbranding=1" title="Video 02" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
-            <p class="work-title">Video 02</p>
+            <p class="work-type">2025：退職企業での動画作成</p>
           </div>
         </div>
       </section>
@@ -518,7 +541,7 @@
         </div>
       </div>
 
-      <h2>About</h2>
+      <h2 class="about-heading">About</h2>
       <p class="about-text">このサイトは、AIを活用しHTMLでGithub上に作成しました。<br>日々新しくなるスキルやツールや知識を身に着け、人の役に立つことができれば幸いです。</p>
     </section>
 
