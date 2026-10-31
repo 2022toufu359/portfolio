@@ -306,8 +306,18 @@
 
     /* About - Tools */
     .tools {
-      margin-top: 48px;
+      margin: 48px 0 0;
       max-width: 420px;
+      width: 100%;
+      position: relative;
+      left: auto;
+      padding: 0;
+    }
+
+    /* ToolsをAboutセクションの左端にそろえる */
+    #about > .tools {
+      margin-left: 0;
+      align-self: auto;
     }
 
     .tools h3 {
@@ -481,6 +491,10 @@
         </div>
       </section>
     </section>
+    
+    <section class="works" id="about">
+      <h2>About</h2>
+      <p class="about-text">好奇心</p>
 
       <div class="tools">
         <h3>Tools</h3>
@@ -510,15 +524,11 @@
         </div>
       </div>
     </section>
-    
-    <section class="works" id="about">
-      <h2>About</h2>
-      <p class="about-text">林でもあり圡井でもあります。</p>
 
   </main>
-    
 
-      © 2026 Portfolio
+  <footer>
+    © 2026 Portfolio
   </footer>
 
   <!-- 共通ポップアップ -->
